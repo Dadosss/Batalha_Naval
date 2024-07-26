@@ -97,8 +97,8 @@ void posicionaBarcos(char tabuleiro [10] [10]){
 	
 	while(quantidadePosicionada < quantidade){
 		
-		int	linhaAleatoria = rand() % 10;		// Gera número aleatório de 0 a 9.
-		int colunaAleatoria = rand() % 10;		// Gera número aleatório de 0 a 9.
+		int	linhaAleatoria = rand() % 10; // Gera número aleatório de 0 a 9.
+		int colunaAleatoria = rand() % 10; // Gera número aleatório de 0 a 9.
 		
 		if(tabuleiro [linhaAleatoria] [colunaAleatoria] == 'A'){
 			
@@ -127,14 +127,14 @@ void verificaTiro(char tabuleiro [10] [10],	int linhaJogada, int colunaJogada, i
 
 void jogo(string nomeDoJogador){
 	// Variáveis gerais.
-	char tabuleiro [10] [10], mascara [10] [10]; 				// Tabuleiro do jogo.
-	int linha, coluna;											// Variáveis de navegação.
-	int linhaJogada, colunaJogada;								// Valores digitados pelo jogador.
-	int estadoDeJogo = 1;										// 1 = jogo acontecendo 0 = Fim de jogo.
-	int pontos = 0;												// Pontuação do jogador.
-	int tentativas = 0, maximoDeTentativas = 10;				// Tentativas do jogador.
-	int opcao;													// Opções de fim de jogo.
-	string mensagem;											// Feedback para o jogador.	
+	char tabuleiro [10] [10], mascara [10] [10]; // Tabuleiro do jogo.
+	int linha, coluna;	// Variáveis de navegação.
+	int linhaJogada, colunaJogada;	// Valores digitados pelo jogador.
+	int estadoDeJogo = 1; // 1 = jogo acontecendo 0 = Fim de jogo.
+	int pontos = 0;	// Pontuação do jogador.
+	int tentativas = 0, maximoDeTentativas = 10; // Tentativas do jogador.
+	int opcao;	// Opções de fim de jogo.
+	string mensagem; // Feedback para o jogador.	
 	
 	
 	
@@ -195,9 +195,9 @@ void jogo(string nomeDoJogador){
 
 
 void menuInicial(){
-	int opcao; 								// Armazena a opção escolhida pelo jogador. 
-	int voltar;								// Reiniciar o jogo.
-	string nomeDoJogador;					// Nome do usuário.
+	int opcao; // Armazena a opção escolhida pelo jogador. 
+	int voltar;	// Reiniciar o jogo.
+	string nomeDoJogador; // Nome do usuário.
 	
 	// Enquanto o jogador não digita uma opção válida, mostra o menu novamente
 	while(opcao < 1 || opcao > 3){
